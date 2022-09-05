@@ -1,0 +1,28 @@
+{
+  "workbench.colorTheme": "Default Dark+",
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "workbench.startupEditor": "none",
+  "window.zoomLevel": 1,
+  "vim.vimrc.enable": true,
+  "zenMode.hideLineNumbers": false,
+  "editor.lineNumbers": "relative",
+  "emmet.triggerExpansionOnTab": true,
+  "breadcrumbs.enabled": false,
+  "editor.formatOnSave": false,
+  "editor.minimap.enabled": false,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "workbench.iconTheme": "material-icon-theme",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "k",
+        "j"
+      ],
+      "after": [
+        "<Esc>",
+        "l"
+      ]
+    }
+  ],
+}
