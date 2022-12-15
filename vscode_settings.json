@@ -1,18 +1,38 @@
 {
   "workbench.colorTheme": "Default Dark+",
+  
+  "editor.tokenColorCustomizations": {
+    "[Default Dark+]": {
+        "comments": "#767674",
+        "strings": "#ccde6a"
+    },
+    "textMateRules": [
+      {           
+          "scope": [
+              "string.quoted.docstring.multi.python",
+              "string.quoted.docstring.multi.python punctuation.definition.string.begin.python",
+              "string.quoted.docstring.multi.python punctuation.definition.string.end.python",
+              "string.quoted.docstring.multi.python constant.character.escape.python"
+          ],          
+          "settings": {
+              "foreground": "#939395" 
+          }       
+      }
+  ]
+},
   "git.autofetch": true,
   "git.enableSmartCommit": true,
   "workbench.startupEditor": "none",
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 2,
   "vim.vimrc.enable": true,
   "zenMode.hideLineNumbers": false,
   "editor.lineNumbers": "relative",
   "emmet.triggerExpansionOnTab": true,
-  "breadcrumbs.enabled": false,
   "editor.formatOnSave": false,
   "editor.minimap.enabled": false,
   "terminal.integrated.defaultProfile.osx": "zsh",
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.list.automaticKeyboardNavigation": false,
   "vim.insertModeKeyBindings": [
     {
       "before": [
@@ -25,4 +45,11 @@
       ]
     }
   ],
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.defaultLocation": "editor",
+  "terminal.integrated.fontSize": 8,
+  "workbench.editor.wrapTabs": true,
+  "workbench.editor.enablePreview": false,
+  "editor.bracketPairColorization.enabled": true,
 }
