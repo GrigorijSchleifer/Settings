@@ -15,7 +15,7 @@
               "string.quoted.docstring.multi.python constant.character.escape.python"
           ],          
           "settings": {
-              "foreground": "#939395" 
+              "foreground": "#939395" //change to your preference
           }       
       }
   ]
@@ -23,13 +23,11 @@
   "git.autofetch": true,
   "git.enableSmartCommit": true,
   "workbench.startupEditor": "none",
-  "window.zoomLevel": 2,
   "vim.vimrc.enable": true,
   "zenMode.hideLineNumbers": false,
   "editor.lineNumbers": "relative",
   "emmet.triggerExpansionOnTab": true,
   "editor.formatOnSave": false,
-  "editor.minimap.enabled": false,
   "terminal.integrated.defaultProfile.osx": "zsh",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.list.automaticKeyboardNavigation": false,
@@ -45,11 +43,25 @@
       ]
     }
   ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+        "before": ["J"],
+        "commands": ["editor.action.moveLinesDownAction"]
+    }, // moveLineDown
+    {
+        "before": ["K"],
+        "commands": ["editor.action.moveLinesUpAction"]
+    } // moveLineUp
+],
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.defaultLocation": "editor",
   "terminal.integrated.fontSize": 8,
   "workbench.editor.wrapTabs": true,
-  "workbench.editor.enablePreview": false,
   "editor.bracketPairColorization.enabled": true,
+  "editor.renderWhitespace": "none",
+  "editor.renderControlCharacters": false,
+  "editor.minimap.enabled": false,
+  "window.zoomLevel": 2,
+  "git.confirmSync": false,
 }
