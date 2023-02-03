@@ -1,6 +1,7 @@
 {
   "workbench.colorTheme": "Default Dark+",
-  
+ 
+ 
   "editor.tokenColorCustomizations": {
     "[Default Dark+]": {
         "comments": "#767674",
