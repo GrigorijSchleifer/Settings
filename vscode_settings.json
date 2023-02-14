@@ -16,7 +16,7 @@
               "string.quoted.docstring.multi.python constant.character.escape.python"
           ],          
           "settings": {
-              "foreground": "#939395" //change to your preference
+              "foreground": "#939395"
           }       
       }
   ]
@@ -48,11 +48,11 @@
     {
         "before": ["J"],
         "commands": ["editor.action.moveLinesDownAction"]
-    }, // moveLineDown
+    }, 
     {
         "before": ["K"],
         "commands": ["editor.action.moveLinesUpAction"]
-    } // moveLineUp
+    } 
 ],
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.copyOnSelection": true,
@@ -64,5 +64,5 @@
   "editor.renderControlCharacters": false,
   "editor.minimap.enabled": false,
   "window.zoomLevel": 2,
-  "git.confirmSync": false,
+  "git.confirmSync": false
 }
