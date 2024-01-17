@@ -1,36 +1,34 @@
 {
-  "workbench.colorTheme": "Default Dark+",
- 
- 
   "editor.tokenColorCustomizations": {
     "[Default Dark+]": {
-        "comments": "#767674",
-        "strings": "#ccde6a"
+      "comments": "#767674",
+      "strings": "#ccde6a"
     },
     "textMateRules": [
       {           
-          "scope": [
-              "string.quoted.docstring.multi.python",
-              "string.quoted.docstring.multi.python punctuation.definition.string.begin.python",
+        "scope": [
+          "string.quoted.docstring.multi.python",
+          "string.quoted.docstring.multi.python punctuation.definition.string.begin.python",
               "string.quoted.docstring.multi.python punctuation.definition.string.end.python",
               "string.quoted.docstring.multi.python constant.character.escape.python"
-          ],          
-          "settings": {
-              "foreground": "#939395"
-          }       
-      }
-  ]
-},
-  "git.autofetch": true,
-  "git.enableSmartCommit": true,
+            ],          
+            "settings": {
+              "foreground": "#939395" //change to your preference
+            }       
+          }
+        ]
+      },
+      "git.autofetch": true,
+      "git.enableSmartCommit": true,
   "workbench.startupEditor": "none",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.integrated.fontFamily": "MesloLGS NF",
   "vim.vimrc.enable": true,
   "zenMode.hideLineNumbers": false,
   "editor.lineNumbers": "relative",
   "emmet.triggerExpansionOnTab": true,
   "editor.formatOnSave": false,
   "terminal.integrated.defaultProfile.osx": "zsh",
-  "workbench.iconTheme": "material-icon-theme",
   "workbench.list.automaticKeyboardNavigation": false,
   "vim.insertModeKeyBindings": [
     {
@@ -45,15 +43,17 @@
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
-    {
+  {
         "before": ["J"],
         "commands": ["editor.action.moveLinesDownAction"]
-    }, 
+    }, // moveLineDown
     {
         "before": ["K"],
         "commands": ["editor.action.moveLinesUpAction"]
-    } 
-],
+        },  // moveLineUp
+  { "before": ["<S-h>"], "commands": [":bprevious"] }, // switch b/w buffers
+  { "before": ["<S-l>"], "commands": [":bnext"] },
+  ],
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.defaultLocation": "editor",
@@ -63,6 +63,13 @@
   "editor.renderWhitespace": "none",
   "editor.renderControlCharacters": false,
   "editor.minimap.enabled": false,
-  "window.zoomLevel": 2,
-  "git.confirmSync": false
-}
+  "git.confirmSync": false,
+  "explorer.confirmDelete": false,
+  "window.zoomLevel": 1,
+  "jupyter.askForKernelRestart": false,
+  "codesnap.showLineNumbers": false, // omit line numbers in codesnap images
+  "codesnap.containerPadding": "1em",
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.colorTheme": "Default Dark+",
+  "window.commandCenter": false,
+  "breadcrumbs.enabled": false // padding width in codesnap images
