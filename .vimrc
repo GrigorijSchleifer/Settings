@@ -1,5 +1,5 @@
 " Disable compatibility with vi which can cause unexpected issues
-set noncompatible
+set nocompatible
 
 " Enable plugins and load plugin for the detected file type
 filetype plugin on
